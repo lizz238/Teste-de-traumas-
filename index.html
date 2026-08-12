@@ -1,4 +1,4 @@
-i9<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -9,107 +9,55 @@ i9<!DOCTYPE html>
 
 <body>
 
-<main class="app">
+<div class="app">
 
-  <!-- INÍCIO -->
   <section id="inicio" class="tela ativa">
-    <div class="icone">🧠</div>
+    <h1>🧠 Meu Bem-Estar</h1>
+    <p>Autoavaliações de bem-estar emocional.</p>
 
-    <h1>Meu Bem-Estar</h1>
-
-    <p>
-      Conheça melhor suas emoções através de
-      autoavaliações de bem-estar.
-    </p>
-
-    <button onclick="mostrarTestes()">Começar</button>
+    <button id="btnComecar">Começar</button>
 
     <small>
-      Este aplicativo é educativo e não substitui
-      avaliação de um profissional de saúde.
+      Este aplicativo é educativo e não fornece diagnóstico.
     </small>
   </section>
 
-
-  <!-- ESCOLHA DOS TESTES -->
   <section id="testes" class="tela">
-
     <h2>Escolha um teste</h2>
 
-    <button onclick="iniciarTeste()">
+    <button id="btnInfancia">
       🌱 Experiências na infância
     </button>
 
-    <button onclick="iniciarTeste('relacionamentos')">
-  ❤️ Relacionamentos
-</button>
-
-<button onclick="iniciarTeste('autoestima')">
-  ⭐ Autoestima
-</button>
-
-<button onclick="iniciarTeste('ansiedade')">
-  🌿 Ansiedade e estresse
-</button>
-
-<button onclick="iniciarTeste('bemestar')">
-  🌸 Bem-estar emocional
-</button>
-
-    <button class="voltar" onclick="voltarInicio()">
-      Voltar
+    <button id="btnImpacto">
+      💭 Impacto emocional
     </button>
 
+    <button id="btnVoltar">Voltar</button>
   </section>
 
-
-  <!-- PERGUNTA -->
   <section id="pergunta" class="tela">
+    <p id="progresso"></p>
 
-    <div class="progresso">
-      Pergunta <span id="numeroPergunta">1</span> de 20
-    </div>
+    <h2 id="textoPergunta"></h2>
 
-    <div class="barra">
-      <div id="barraProgresso"></div>
-    </div>
-
-    <h2 id="textoPergunta">
-      Algumas lembranças da infância ainda despertam
-      emoções fortes em você?
-    </h2>
-
-    <button onclick="responder(0)">Nunca</button>
-    <button onclick="responder(1)">Raramente</button>
-    <button onclick="responder(2)">Às vezes</button>
-    <button onclick="responder(3)">Frequentemente</button>
-    <button onclick="responder(4)">Quase sempre</button>
-
+    <button class="resposta" data-pontos="0">Nunca</button>
+    <button class="resposta" data-pontos="1">Raramente</button>
+    <button class="resposta" data-pontos="2">Às vezes</button>
+    <button class="resposta" data-pontos="3">Frequentemente</button>
+    <button class="resposta" data-pontos="4">Quase sempre</button>
   </section>
 
-
-  <!-- RESULTADO -->
   <section id="resultado" class="tela">
-
-    <div class="icone">🌱</div>
-
-    <h2>Resultado</h2>
-
     <h2 id="resultadoTitulo">Resultado</h2>
+    <p id="resultadoTexto"></p>
 
-<p id="resultadoTexto">
-  Este é um resultado educativo baseado nas suas respostas.
-</p>
-
-    <button onclick="voltarInicio()">
-      Voltar ao início
-    </button>
-
+    <button id="btnInicio">Voltar ao início</button>
   </section>
 
-</main>
+</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
-                                              </html>
