@@ -23,7 +23,7 @@ const perguntasInfancia = [
 
 let perguntaAtual = 0;
 let pontuacao = 0;
-
+let testeAtual = perguntasInfancia;
 function mostrarTestes() {
   esconderTelas();
   document.getElementById("testes").classList.add("ativa");
@@ -34,9 +34,20 @@ function voltarInicio() {
   document.getElementById("inicio").classList.add("ativa");
 }
 
-function iniciarTeste() {
+function iniciarTeste(tipo) {
   perguntaAtual = 0;
   pontuacao = 0;
+
+  if (tipo === "impacto") {
+    testeAtual = perguntasImpacto;
+  } else {
+    testeAtual.length
+
+  esconderTelas();
+  document.getElementById("pergunta").classList.add("ativa");
+
+  mostrarPergunta();
+}
 
   esconderTelas();
   document.getElementById("pergunta").classList.add("ativa");
@@ -49,7 +60,7 @@ function mostrarPergunta() {
     perguntaAtual + 1;
 
   document.getElementById("textoPergunta").textContent =
-    perguntasInfancia[perguntaAtual];
+    testeAtual[perguntaAtual]
 const perguntasImpacto = [
   "Você percebe mudanças fortes no seu humor sem saber exatamente o motivo?",
   "Pequenas situações às vezes provocam uma reação emocional maior do que você esperava?",
