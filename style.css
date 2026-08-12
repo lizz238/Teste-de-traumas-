@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f1f8;
+  color: #292332;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  margin: auto;
+  background: white;
+  padding: 30px 22px;
+}
+
+.tela {
+  display: none;
+  text-align: center;
+}
+
+.tela.ativa {
+  display: block;
+}
+
+.icone {
+  font-size: 70px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #625c6d;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 17px;
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+  background: #7652c7;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.voltar {
+  background: #e8e3ed;
+  color: #443d4c;
+  margin-top: 20px;
+}
+
+small {
+  display: block;
+  margin-top: 30px;
+  color: #777;
+  line-height: 1.5;
+}
