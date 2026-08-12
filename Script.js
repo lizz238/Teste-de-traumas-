@@ -50,7 +50,28 @@ function mostrarPergunta() {
 
   document.getElementById("textoPergunta").textContent =
     perguntasInfancia[perguntaAtual];
-
+const perguntasImpacto = [
+  "Você percebe mudanças fortes no seu humor sem saber exatamente o motivo?",
+  "Pequenas situações às vezes provocam uma reação emocional maior do que você esperava?",
+  "Você costuma guardar sentimentos para não demonstrá-los aos outros?",
+  "Tem dificuldade para falar sobre aquilo que está sentindo?",
+  "Você sente que algumas emoções permanecem por muito tempo?",
+  "Quando algo dá errado, você costuma pensar repetidamente sobre o acontecimento?",
+  "Você se sente emocionalmente esgotado(a) com facilidade?",
+  "Situações de rejeição afetam bastante seu estado emocional?",
+  "Você sente dificuldade para lidar com mudanças inesperadas?",
+  "Costuma imaginar que algo ruim pode acontecer mesmo quando não existe uma ameaça clara?",
+  "Você sente necessidade de controlar determinadas situações para conseguir ficar tranquilo(a)?",
+  "Depois de uma situação estressante, demora para voltar ao seu estado normal?",
+  "Você costuma esconder o que sente para evitar conflitos?",
+  "Tem dificuldade para identificar exatamente o que está sentindo?",
+  "Você percebe que determinadas situações despertam emoções muito intensas?",
+  "Quando está emocionalmente abalado(a), tem dificuldade para se concentrar?",
+  "Você costuma se cobrar para superar rapidamente situações que lhe fizeram mal?",
+  "É difícil pedir ajuda quando você está passando por um momento emocional complicado?",
+  "Você sente que experiências passadas influenciam suas emoções no presente?",
+  "Você gostaria de compreender melhor suas próprias reações emocionais?"
+];
   document.getElementById("barraProgresso").style.width =
     ((perguntaAtual + 1) / perguntasInfancia.length * 100) + "%";
 }
